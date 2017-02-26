@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="img/black-balloon-shape.png" />
+                <h1>How many balloons do you need to take you off the grounds?</h1>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="test">
+                <form>
+                    <div class="form-group">
+                        <label for="slider">How tall are you?</label>
+                        <input id="slider">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donuts">How many donuts did you have today?</label>
+                        <input type="number" id="donuts" placeholder="type a number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>How high do you want to fly?</label>
+                        <div class="height">
+                            <input type="radio" name="height" id="small">
+                            <label for="small">Just a bit</label>
+
+                            <input type="radio" name="height" id="medium">
+                            <label for="medium">As high as birds fly</label>
+
+                            <input type="radio" name="height" id="large">
+                            <label for="large">To the sun!</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What is your favourite colour?</label>
+                        <div class="colours">
+                            <input type="radio" name="colours" id="blue">  
+                            <label for="blue"><div class="blue"></div></label>
+
+                            <input type="radio" name="colours" id="yellow">
+                            <label for="yellow"><div class="yellow"></div></label>
+
+                            <input type="radio" name="colours" id="red">
+                            <label for="red"><div class="red"></div></label>
+
+                            <input type="radio" name="colours" id="green">
+                            <label for="green"><div class="green"></div></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Check it!</button>
+                </form>
+            </section>
+
+            <section class="result">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 551.891 551.891" style="enable-background:new 0 0 551.891 551.891;"
+                    xml:space="preserve">
+                    <g>
+                        <g class="balloon">
+                            <path d="M28.038,549.102c25.744-19.93,55.04-33.963,86.371-42.573c34.554-9.495,69.471-7.571,104.87-7.075
+                                c51.145,0.716,117.292-14.93,129.878-72.883l25.438,18.176c2.944-13.451,1.652-30.478-3.326-44.688
+                                c-10.076-0.074-20.168-1.179-30.016-3.333c-9.947-2.179-19.507-5.41-28.656-9.52c-10.462,10.829-18.755,25.763-21.698,39.217
+                                l34.703-6.652c-14.189,65.509-102.865,54.242-152.11,54.435c-59.373,0.232-116.065,21.438-162.761,57.586
+                                C-1.739,541.442,15.721,558.637,28.038,549.102z"/>
+                            <path d="M427.441,3.008C418.173,0.979,408.889,0,399.647,0C324.127,0.006,252.44,65.499,232.039,158.695
+                                c-21.212,96.901,20.478,189.702,94.327,217.639c5.863,2.219,11.906,4.079,18.158,5.447c6.261,1.37,12.53,2.221,18.788,2.655
+                                c3.005,0.208,6.011,0.353,9.006,0.353c75.521,0,147.207-65.499,167.608-158.692C562.825,121.497,512.463,21.619,427.441,3.008z"/>
+                        </g>
+                    </g>
+                </svg>
+                <p>You need <span class="counter">55</span> <span class="balloon-color">yellow</span> balloons to fly!</p>
+            </section>
+        </div>
+        <footer>
+
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
