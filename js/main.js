@@ -50,7 +50,7 @@ $(document).ready(function() {
         var $colours = $("input[name='colours']:checked").val();
 
         var $counter = howManyBalloons($sliderValue,$donuts,$elevation);
-        $("#balloon-color").text($colours).addClass($colours);
+        $("#balloonColor").text($colours).addClass($colours);
 
         $("#counter").prop("counter",0).animate({
             "counter": $counter
