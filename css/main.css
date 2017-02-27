@@ -172,19 +172,19 @@ input:focus {
     border: 2px solid #18CF86;
 }
 
-.colours .blue {
+.blue {
     background-color: #93D5FF;
 }
 
-.colours .yellow {
+.yellow {
     background-color: #FFD763;
 }
 
-.colours .red {
+.red {
     background-color: #F88B95;
 }
 
-.colours .green {
+.green {
     background-color: #C2CF86;
 }
 
@@ -205,12 +205,26 @@ button[type="submit"]:hover {
     background-color: #449C65;
 }
 
-.balloon {
-    max-width: 300px;
-    fill: #ffcc00;
+.result {
+    display: none;
 }
 
+.result p {
+    text-align: center;
+}
 
+.result p #counter {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.balloonPrototype {
+    display: none;
+}
+
+.balloonGroup {
+    position: absolute;
+}
 
 
 
