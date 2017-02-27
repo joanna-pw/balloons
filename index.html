@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>How many balloons?</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,16 +32,14 @@
                         <label for="slider">How tall are you?</label>
                         <input id="slider">
                     </div>
-
                     <div class="form-group">
                         <label for="donuts">How many donuts did you have today?</label>
-                        <input type="number" id="donuts" placeholder="type a number">
+                        <input type="number" id="donuts" placeholder="type a number" min="0" max="20" maxlength="20" size="20">
                     </div>
-
                     <div class="form-group">
                         <label>How high do you want to fly?</label>
                         <div class="height">
-                            <input type="radio" name="height" id="small" value="1">
+                            <input type="radio" name="height" id="small" value="1" checked >
                             <label for="small">Just a bit</label>
 
                             <input type="radio" name="height" id="medium" value="1.2">
@@ -51,11 +49,10 @@
                             <label for="large">To the sun!</label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label>What is your favourite colour?</label>
                         <div class="colours">
-                            <input type="radio" name="colours" id="blue" value="blue">  
+                            <input type="radio" name="colours" id="blue" value="blue" checked>  
                             <label for="blue"><div class="blue"></div></label>
 
                             <input type="radio" name="colours" id="yellow" value="yellow">
@@ -68,13 +65,13 @@
                             <label for="green"><div class="green"></div></label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Check it!</button>
+                    <button type="submit">Check it!</button>
                 </form>
             </section>
 
             <section class="result">
                 <p>You need <span id="counter"></span> <span id="balloon-color"></span> balloons to fly!</p>
-                <div class="balloonPrototype">
+                <div class="balloonPrototype balloon">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 551.891 551.891" width="100px" style="enable-background:new 0 0 551.891 551.891;">
                         <g>
@@ -92,15 +89,13 @@
                     </svg>
                 </div>
                 <div class="balloonGroup"></div>
+                <a class="playAgain" href="index.html" role="button">Play again</a>
             </section>
         </div>
-        <footer>
-
-        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/ion.rangeSlider.min.js"></script>
         <script src="js/main.js"></script>
-
+        
     </body>
 </html>
